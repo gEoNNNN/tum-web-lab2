@@ -79,7 +79,6 @@ nav ul li a:hover {
     margin-top: 4vh;
 }
 
-/* Hover Effect */
 .home-content button:hover {
     background-color: #ffcc00;
     color: #3e2723;
@@ -87,7 +86,7 @@ nav ul li a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Click Effect */
+
 .home-content button:active {
     transform: scale(0.95); /* Slightly shrinks the button */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -99,7 +98,7 @@ nav ul li a:hover {
     text-align: left;
     font-size: 2.5vw;
     margin: 4vw;
-    margin-left: 190px;
+    margin-left: 10vw;
 }
 
 .coffee-content ul {
@@ -184,7 +183,7 @@ nav ul li a:hover {
   right: -0.9vw;
   background-color: white;
   border: 4px solid #ffcc00;
-  top: 1.5vh;
+  top: 2vh;
   border-radius: 50%;
   z-index: 1;
 }
@@ -218,14 +217,14 @@ nav ul li a:hover {
     text-align: left;
     font-size: 3vw;
     margin: 70px;
-    margin-left: 190px;
+    margin-left: 12vw;
 }
 
 .contact h2 {
     text-align: left;
     width: 60vw;
     margin-top: 4vh;
-    margin-left: 10vw;
+    margin-left: 12vw;
     font-family: Montserrat;
     font-size: 1.2vw;
 }
@@ -233,7 +232,7 @@ nav ul li a:hover {
     text-align: left;
     width: 60vw;
     margin-top: 4vh;
-    margin-left: 10vw;
+    margin-left: 12vw;
     font-family: Montserrat;
     font-size: 1.2vw;
 }
@@ -243,10 +242,14 @@ nav ul li a:hover {
     font-weight: 800;
     text-align: left;
     font-size: 1.2vw;
-    margin: 7vh;
-    margin-left: 10vw;
+    margin: 5vh;
+    margin-left: 12vw;
 }
 
+.contact iframe {
+    width: 40vw;
+    height: 40vw;
+}
 
 footer {
     background: #6f4e37;
@@ -255,3 +258,141 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+@media screen and (max-width: 1900px) {
+    .timeline {
+        position: relative;
+        max-width: 120vh;
+        margin: 10vh auto;
+    }
+    
+    
+    .timeline h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        text-align: left;
+        font-size: 3vw;
+        margin-bottom: 1vh;
+        margin-left: 12vw;
+    }
+    
+    .timeline::after {
+      width: 0px;
+      background-color: #f8f1e5
+    }
+    
+    .container h2 {
+        font-size: 1.5vw;
+        margin-bottom: 0.5vh;
+    }
+    
+    .container p {
+        font-size: 1.2vw;
+    }
+
+    .container::after {
+      width: 0px;
+      height: 0px;
+      background-color: #f8f1e5;
+      border: 4px solid #f8f1e5;
+    }
+    
+    .left {
+      left: 10vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .timeline {
+        margin: 2vh auto;
+    }
+    .title h1 {
+        font-size: 4vw;
+    }
+
+    .home-content{
+        margin-top: 10vh;
+    }
+
+    .home-content button {
+        margin-top: 2vh;
+    }
+
+    header {
+        padding: 1vh 1vw;
+    }
+    
+    nav ul {
+        gap: 1vw;
+    }
+    
+    nav ul li a {
+        font-size: 2.5vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .home-content{
+        margin-top: 5vh;
+    }
+
+    .coffee-content ul li h2 {
+        font-size: 1vw ;
+    }
+    .coffee-content ul li h2,h3 {
+        margin-top: 1vh;
+    }
+
+    .coffee-content ul li h3 {
+        font-size: 1.5vw;
+    }
+    .coffee-content ul li h1 {
+        font-size: 2vw;
+    }
+
+    .contact {
+        margin-bottom: 3vh;
+    }
+    
+    .contact h1 {
+        margin: 1vh;
+        margin-left: 12vw;
+    }
+    
+    .contact h2 {
+        margin-top: 1vh;
+        margin-left: 12vw;
+        font-family: Montserrat;
+        font-size: 1.2vw;
+    }
+    .contact h3 {
+        margin-top: 1vh;
+        margin-left: 12vw;
+    }
+    
+    .email,.phone {
+        font-family: Caladea;
+        font-weight: 800;
+        text-align: left;
+        font-size: 1.2vw;
+        margin: 1vh;
+        margin-left: 12vw;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .home-content{
+        margin-top: 5vh;
+    }
+
+    .coffee-content ul li h2,h3 {
+        margin-top: 0vh;
+    }
+
+}
+
+
